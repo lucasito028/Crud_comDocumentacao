@@ -7,6 +7,7 @@ require_once '../models/MySQLDatabase.php';
 use MySQLDatabase\MySQLDatabase, PDOException, PDO;
 
 
+
 final class Pessoa extends MySQLDatabase{
     
     
@@ -34,10 +35,10 @@ final class Pessoa extends MySQLDatabase{
                     return [];
                 }
             } else {
-                return "No Ler";
+                return ["Nada"];
             }
         } catch (PDOException $err) {
-            return "Erro: " . $err->getMessage();
+            die("Erro");
         }
     }
 

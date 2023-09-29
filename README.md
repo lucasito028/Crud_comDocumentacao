@@ -1,23 +1,46 @@
 # Crud_comDocumentacao
 
-- [1. AloAlo](#1-AloAlo)
+- [1. Introdução ](#1-Introdução)
+- [2. Classes ](#2-Classes)
 
 
-## 1. AloAlo
+## 1. Introdução
 
-The main purpose of this PSR is to provide a complete and formal definition of
-the PHPDoc standard. This PSR deviates from its predecessor, the de-facto PHPDoc
-Standard associated with [phpDocumentor 1.x][PHPDOC.ORG], to provide
-support for newer features in the PHP language and to address some of the
-shortcomings of its predecessor.
+  Fazendo o requisito de manter Pessoa: 
+* cadastrar 
+* alterar 
+* ler 
+* deletar  
+* selecionar
 
-This document SHALL NOT:
+## 2. Classes
+  As classes são usando Herança. Abstração e Encapsulamento:
 
-* Describe a standard for implementing annotations via PHPDoc. Although it does
-  offer versatility which makes it possible to create a subsequent PSR based on
-  current practices. See [chapter 5.3](#53-tags) for more information on this
-  topic.
-* Describe best practices or recommendations for Coding Standards on the
-  application of the PHPDoc standard. This document is limited to a formal
-  specification of syntax and intention.
+* Keys - Seria a chave para acessar o banco de dados
+Atributos: 
+host = "localhost";
+user = "root";
+db = "itospet";
+senha = "";
+port = 3306;
+object $conn;
+
+* MysqlDatabase - Classe abstrata - Responsável pela conexão do banco de dados na qual suas classes filhas pudesse conectar
+Metodos: connect();
+select()
+create()
+Update()
+delete()
+
+* Pessoa - Classe filha de "MysqlDatabase" na qual seria responsável por fazer as operações do CRUD da tabela Pessoa 
+Metodos: connect()
+select()
+create()
+update()
+delete()
+
+* BancoDeDados - Interface - na qual seria implementada pela classe MysqlDatabase ter uma função para conectar o banco de dados
+Metodos: connect()
+
+
 

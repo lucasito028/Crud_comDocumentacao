@@ -19,7 +19,7 @@ abstract class MySQLDatabase extends Keys implements BancoDeDados{
             port={$this->port};
             dbname={$this->db}";
 
-            $this->conn = new PDO($dns, $this->user, $this->senha);
+            $this->conn = new PDO($dns, $this->user, $this->password);
 
             return $this->conn;
 
