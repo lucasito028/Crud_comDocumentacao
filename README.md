@@ -6,40 +6,40 @@
 
 ## 1. Introdução
 
-  Fazendo o requisito de manter Pessoa: 
-* cadastrar 
-* alterar 
-* deletar  
-* selecionar
+  Fazendo o requisito de manter Pessoa:<br>
+* cadastrar <br>
+* alterar <br>
+* deletar  <br>
+* selecionar<br>
 
 ## 2. Classes
-  As classes são usando Herança. Abstração e Encapsulamento:
+  As classes são usando usando 3 pilares de OOP: Herança. Abstração e Encapsulamento:<br>
 
-* Keys - Seria a chave para acessar o banco de dados
-Atributos: 
-host = "localhost";
-user = "root";
-db = "itospet";
-senha = "";
-port = 3306;
-object $conn;
+* Keys - Seria a chave para acessar o banco de dados<br>
+Atributos: <br>
+host = "localhost";<br>
+user = "root";<br>
+db = "itospet";<br>
+senha = "";<br>
+port = 3306;<br>
+object $conn;<br>
 
-* MysqlDatabase - Classe abstrata - Responsável pela conexão do banco de dados na qual suas classes filhas pudesse conectar
-Metodos: connect();
-select()
-create()
-Update()
-delete()
+* MysqlDatabase - Classe abstrata - Responsável pela conexão do banco de dados na qual suas classes filhas pudesse conectar<br>
+Metodos: connect();<br>
+select()<br>
+create()<br>
+Update()<br>
+delete()<br>
 
-* Pessoa - Classe filha de "MysqlDatabase" na qual seria responsável por fazer as operações do CRUD da tabela Pessoa 
-Metodos: connect()
-select()
-create()
-update()
-delete()
+* Pessoa - Classe filha de "MysqlDatabase" na qual seria responsável por fazer as operações do CRUD da tabela Pessoa <br>
+Metodos: connect()<br>
+select()<br>
+create()<br>
+update()<br>
+delete()<br>
 
-* BancoDeDados - Interface - na qual seria implementada pela classe MysqlDatabase ter uma função para conectar o banco de dados
-Metodos: connect()
+* BancoDeDados - Interface - na qual seria implementada pela classe MysqlDatabase ter uma função para conectar o banco de dados<br>
+Metodos: connect()<br>
 
 
 
