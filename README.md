@@ -9,7 +9,6 @@
   Fazendo o requisito de manter Pessoa: 
 * cadastrar 
 * alterar 
-* ler 
 * deletar  
 * selecionar
 
