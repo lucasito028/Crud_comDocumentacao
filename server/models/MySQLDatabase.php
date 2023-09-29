@@ -27,8 +27,6 @@ abstract class MySQLDatabase extends Keys implements BancoDeDados{
 
             die("Morri". $e->getMessage());
 
-            return false;
-
         }
     }
     
@@ -52,10 +50,10 @@ abstract class MySQLDatabase extends Keys implements BancoDeDados{
                     return [];
                 }
             } else {
-                return "No Ler";
+                return [];
             }
         } catch (PDOException $err) {
-            return "Erro: " . $err->getMessage();
+            die ("Erro: " . $err->getMessage());
         }
     }
 
