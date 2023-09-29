@@ -31,7 +31,7 @@ create()<br>
 Update()<br>
 delete()<br>
 
-* Pessoa - Classe filha de "MysqlDatabase" na qual seria responsável por fazer as operações do CRUD da tabela Pessoa <br>
+* Pessoa - Classe filha de "MysqlDatabase" na qual seria responsável por fazer as operações do CRUD da tabela Pessoa e pode ser instanciada a objeto<br>
 Metodos: connect()<br>
 select()<br>
 create()<br>
